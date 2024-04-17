@@ -1,0 +1,22 @@
+{
+  "pensamentos": [
+    {
+      "id": 1,
+      "conteudo": "Que bom que você veio!",
+      "autoria": "Pegorari.dev",
+      "modelo": "modelo1"
+    },
+    {
+      "id": 2,
+      "conteudo": "Estudando Angular!",
+      "autoria": "Pegorari.dev",
+      "modelo": "modelo2"
+    },
+    {
+      "id": 3,
+      "conteudo": "Angular é o melhor framework front-end RSRSRS!",
+      "autoria": "Pegorari.dev",
+      "modelo": "modelo3"
+    }
+  ]
+}
