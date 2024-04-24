@@ -4,48 +4,56 @@
       "id": 2,
       "conteudo": "Estudando AngularJS!",
       "autoria": "Pegorari.dev",
-      "modelo": "modelo2"
+      "modelo": "modelo2",
+      "favorito": true
     },
     {
       "conteudo": "Arroz com feijão é bom demais!",
       "autoria": "Pegorari.dev",
       "modelo": "modelo2",
+      "favorito": false,
       "id": 4
     },
     {
       "id": 5,
       "conteudo": "O SankhyaJS, comumente chamado de HTML5, é um framework front-end que se baseia nos padrões web e no framework AngularJS. Ele tem por finalidade facilitar o desenvolvimento de telas e recursos visuais de maneira padronizada e ágil, simplificando sua criação, alteração e customização. A figura abaixo apresenta uma visão da arquitetura em camadas da plataforma Sankhya, com destaque para o uso do SankhyaJS no front-end.",
       "autoria": "Pegorari.dev",
-      "modelo": "modelo2"
+      "modelo": "modelo2",
+      "favorito": false
     },
     {
       "id": 7,
       "conteudo": "Eu acho que passou da hora de assumir a sua culpa. Seu crime foi me amar.",
       "autoria": "Pabllo Vittar",
-      "modelo": "modelo2"
+      "modelo": "modelo2",
+      "favorito": false
     },
     {
       "conteudo": "Não faça arroz sem alho!",
       "autoria": "Matheus Pegorari",
       "modelo": "modelo1",
+      "favorito": true,
       "id": 9
     },
     {
       "conteudo": "Two way Data-binding",
       "autoria": "Pegorari.dev",
       "modelo": "modelo1",
+      "favorito": false,
       "id": 10
     },
     {
       "conteudo": "A vida é uma só",
       "autoria": "Pegorari.dev",
       "modelo": "modelo1",
+      "favorito": false,
       "id": 11
     },
     {
       "conteudo": "Teste de Pensamento",
       "autoria": "aaaaa",
       "modelo": "modelo1",
+      "favorito": false,
       "id": 12
     }
   ]

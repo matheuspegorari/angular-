@@ -15,9 +15,8 @@ export class PensamentoService {
     let params = new HttpParams()
       .set('_page', pagina)
       .set('_limit', itensPorPagina);
-  
-    if (filtro.trim().length > 2) {
 
+    if (filtro.trim().length > 2) {
       params = params.set('q', filtro);
     }
 
@@ -41,5 +40,11 @@ export class PensamentoService {
   buscarPorId(id: number): Observable<Pensamento> {
     const url = `${this.API}/${id}`;
     return this.http.get<Pensamento>(url);
+  }
+
+  mudarFavorito(pensamento: Pensamento): Observable<Pensamento> {
+    pensamento.favorito = !pensamento.favorito;
+    const url = `${this.API}/${pensamento.id}`;
+    return this.editar(pensamento);
   }
 }
