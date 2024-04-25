@@ -16,7 +16,10 @@ export class PensamentoComponent implements OnInit {
     modelo: '',
     favorito: false,
   };
-  constructor(private service :PensamentoService) {}
+
+  @Input()
+  listaFavoritos: Pensamento[] = [];
+  constructor(private service: PensamentoService) {}
 
   ngOnInit(): void {}
 
@@ -29,12 +32,17 @@ export class PensamentoComponent implements OnInit {
 
   mudarIconeFavorito(): string {
     if (this.pensamento.favorito == false) {
-      return 'inativo'
+      return 'inativo';
     }
-    return 'ativo'
+    return 'ativo';
   }
 
-  atualizarFavoritos(){
-    this.service.mudarFavorito(this.pensamento).subscribe()
+  atualizarFavoritos() {
+    this.service.mudarFavorito(this.pensamento).subscribe(() => {
+      this.listaFavoritos.splice(
+        this.listaFavoritos.indexOf(this.pensamento),
+        1
+      );
+    });
   }
 }
